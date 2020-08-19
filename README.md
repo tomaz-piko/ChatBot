@@ -12,7 +12,7 @@ Modeli --> ./src/assets/Models
 
 Potrebujete node packet manager (npm) in angular-cli.
 
-1.) Download zip & extract na poljubno lokacijo.
+1.) Download zip & extract ali fork repozitorija na poljubno lokacijo.
 
 2.) CMD / PowerShell window v direktoriju projekta (za izvajanje ukazov).
 
