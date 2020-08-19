@@ -18,7 +18,7 @@ Potrebujete node packet manager (npm) in angular-cli.
 
 3.) Ukaz 'npm i' za namestitev.
 
-4.) Ukaz 'npm audit fix' v kolikor na korako 3 opozori na prekrivanja različic.
+4.) Ukaz 'npm audit fix' v kolikor na koraku 3 opozori na prekrivanja različic.
 
 5.) Ukaz 'ng serve' za zagon aplikacije na lokalnem strežniku.
 
