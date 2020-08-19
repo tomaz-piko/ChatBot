@@ -1,1 +1,0 @@
-{"vocab_size": 15000, "seq_count": 50440, "enc_max_length": 17, "dec_max_length": 17, "language": "ENG", "save_folder_path": "SLO_copy_50k100e", "epochs": 100, "latent_dim": 128, "batch_size": 128, "lstm_dropout": 0.0, "l2_regularizer": 0.0, "optimizer": "ADAM"}

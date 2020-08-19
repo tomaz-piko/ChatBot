@@ -1,1 +1,0 @@
-{"vocab_size": 15000, "seq_count": 50000, "enc_max_length": 32, "dec_max_length": 32, "language": "ENG", "save_folder_path": "ENG_BS32_ES100_LC25.0k_VS15000", "epochs": 100, "latent_dim": 256, "batch_size": 32, "optimizer": "ADAM"}
