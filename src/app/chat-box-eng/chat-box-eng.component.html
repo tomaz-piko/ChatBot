@@ -1,0 +1,61 @@
+<div class="header2">
+<div class="header">
+  <div class="d-flex bd-highlight">
+    <button type="button" (click)="openModal('info_modal')" class="btnNoBG">
+      <img class="chat_bot_picture rounded-circle" src='assets/Icons/man.png'>
+    </button>
+      <div class="chat_bot_info">
+        <span class="chat_bot_name">CHATBOT</span>
+        <div class="chat_bot_description"><b>Jezik:</b> angleščina</div>
+      </div>
+    </div>
+</div>
+</div>
+<!--<div class="chatbox container" #chatbox [scrollTop]="chatbox.scrollHeight">-->
+<div class="chatbox container" #chatbox>
+  <div *ngFor="let c of chat; let last = last">
+      <div *ngIf="checkIfMe(c.user); else elseBlock">
+        <div class="d-flex justify-content-end mb-4">
+          <div class="me bubble">
+            {{c.msg}}
+          </div>
+        </div>
+      </div>
+      <ng-template #elseBlock>
+        <div class="d-flex justify-content-start mb-4">
+          <div class="bot bubble">
+            {{c.msg}}
+            {{last ? scrollToBottom() : ''}}
+          </div>
+        </div>
+      </ng-template>
+    </div>
+</div>
+<div class="bottom input-group">
+    <textarea [(ngModel)]="message" class="form-control" aria-label="With textarea" placeholder="Vpisi svoje sporočilo..."></textarea>
+    <div class="input-group-append">
+      <button (click)="sendMessage()" class="btn" type="button">
+        <img src='assets/Icons/sent-mail.png'>
+      </button>
+    </div>
+</div>
+
+<jw-modal id="info_modal">
+    <div id="exit_button_row">
+      <button id="exit_button" type="button" (click)="closeModal('info_modal');" class="btnNoBG">
+        <img id="exit_button_img" src='assets/Icons/exitIcon.png'>
+      </button>
+    </div>
+    <div><h1>INFO</h1></div>
+    <hr>
+    <table id="info_table">
+      <tr><th>Št. povedi:</th><td>{{data['seq_count']}}<td></tr>
+      <tr><th>Št. besed:</th><td>{{data['vocab_size']}}<td></tr>
+      <tr><th>Dolžina povedi:</th><td>{{data['dec_max_length']}}<td></tr>
+      <tr><th>Epohi:</th><td>{{data['epochs']}}<td></tr>
+      <tr><th>LSTM dim.:</th><td>{{data['latent_dim']}}<td></tr>
+      <tr><th>Batch size:</th><td>{{data['batch_size']}}<td></tr>
+    </table>
+    <hr>
+    <a routerLink="">Zamenjaj na slovenščino.</a>
+</jw-modal>

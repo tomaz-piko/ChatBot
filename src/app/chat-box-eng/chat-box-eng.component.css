@@ -1,0 +1,135 @@
+.chatbox {
+  position: absolute;
+  overflow: scroll;
+  max-height: calc(100% - 170px);
+  top: 85px;
+  height: 100%;
+  /*background-color: rgba(0,0,0,0.1) !important;*/
+  background: linear-gradient(to right, rgb(134, 168, 231), rgb(127, 127, 213)) !important;
+}
+
+.header2 {
+  background: linear-gradient(to right, rgb(134, 168, 231), rgb(127, 127, 213)) !important;
+  top: 0px;
+  height: 85px;
+  width: 100%;
+  position: fixed;
+  display: block;
+  z-index: -1;
+}
+
+.header {
+  top: 0px;
+  height: 85px;
+  width: 100%;
+  position: fixed;
+  display: block;
+  padding: 10px;
+  background: rgba(0,0,0,0.3) !important;
+  /*background: linear-gradient(to right, rgb(134, 168, 231), rgb(127, 127, 213)) !important;*/
+}
+
+.chat_bot_info {
+  color: white !important;
+  margin-left: 15px;
+
+}
+
+.chat_bot_name {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.chat_bot_description {
+  font-size: 16px;
+}
+
+.chat_bot_picture {
+  /*border: 0.5px solid black;*/
+}
+
+.bottom {
+  bottom: 0;
+  position: fixed;
+  height: 85px;
+  padding: 0px 5px 5px 5px;
+  /*background-color: rgba(0,0,0,0.1) !important;*/
+  background: linear-gradient(to right, rgb(134, 168, 231), rgb(127, 127, 213)) !important;
+}
+
+.bubble {
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 250px;
+  border: 0.5px solid black;
+}
+
+.bot {
+  background-color: #82ccdd;
+  margin-left: 2px;
+  border-radius: 10px 10px 10px 0px;
+}
+
+.me {
+  background: lightgrey;
+  margin-right: 2px;
+  border-radius: 10px 10px 0px 10px;
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 0.3rem !important;
+    margin-top: 0.3rem !important;
+}
+
+textarea {
+  color: white !important;
+  border-radius: 12px 0px 0px 12px !important;
+  border: 0px;
+  background-color: rgba(0,0,0,0.3) !important;
+}
+
+textarea:focus {
+  box-shadow:none !important;
+  border: 0px;
+  outline:0px !important;
+}
+
+textarea::-webkit-input-placeholder {
+  color: white !important;
+}
+
+textarea::placeholder {
+  color: white !important;
+  font-size: 18px;
+}
+
+.btn {
+  border-radius: 0px 12px 12px 0px !important;
+  border: 0px;
+  background-color: rgba(0,0,0,0.3) !important;
+}
+
+.btn:focus {
+  box-shadow:none !important;
+  border: 0px;
+  outline:0px !important;
+}
+
+.btnNoBG {
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+#exit_button, #exit_button_img {
+  float: right;
+  height: 24px;
+}
+
+#info_table {
+  width: 100%
+}
+
+#info_table td{
+  text-align: right;
+}

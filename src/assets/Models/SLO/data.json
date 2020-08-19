@@ -1,0 +1,1 @@
+{"vocab_size": 15000, "seq_count": 50000, "enc_max_length": 17, "dec_max_length": 17, "language": "SLO", "save_folder_path": "SLO50_BS32_LD128_ES100_LC25.0k_VS15000_1", "epochs": 50, "latent_dim": 128, "batch_size": 32, "optimizer": "ADAM"}
