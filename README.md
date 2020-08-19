@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Lokacije pomembnih datotek
 
 Podatkovne zbirke --> ./Datasets
+
 Modeli --> ./src/assets/Models
 
 ## Navodila za namestitev
@@ -12,10 +13,15 @@ Modeli --> ./src/assets/Models
 Potrebujete node packet manager (npm) in angular-cli.
 
 1.) Download zip & extract na poljubno lokacijo.
+
 2.) CMD / PowerShell window v direktoriju projekta (za izvajanje ukazov).
+
 3.) Ukaz 'npm i' za namestitev.
+
 4.) Ukaz 'npm audit fix' v kolikor na korako 3 opozori na prekrivanja različic.
+
 5.) Ukaz 'ng serve' za zagon aplikacije na lokalnem strežniku.
+
 6.) `http://localhost:4200/` v brskalniku.
 
 ## Development server
